@@ -22,7 +22,7 @@ public class ToDoList_Page extends AbstractClass{
     public void clearBrowserSession(){
         clearLocalStorage();
         driver.get("https://todomvc.com/examples/vue/");
-        driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
     }
 
     @FindBy(xpath ="/html/body/section/header/input")
